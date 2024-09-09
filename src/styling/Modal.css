@@ -1,0 +1,358 @@
+.modal {
+  .vouchersView {
+    display: flex;
+    background-color: var(--header-color);
+    flex-direction: column;
+    height: 600px;
+    width: 600px;
+    border-radius: 12px;
+
+    .titleContainer {
+      text-align: left;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--gray-300);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .titleText {
+        font-size: 20px;
+        font-family: 'GothamMedium';
+        width: 90%;
+      }
+      .titleClose {
+        width: 5%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--gray-100);
+        border-radius: 50%;
+        cursor: pointer;
+        font-family: 'GothamLight';
+        font-size: 20px;
+        color: var(--gray-700);
+      }
+    }
+
+    .fieldInputContainer {
+      height: 15%;
+      position: relative;
+      margin: 3rem 1.5rem 1.5rem 1.5rem;
+      padding-bottom: 1rem;
+
+      .titleText {
+        font-size: 14px;
+        font-family: 'GothamMedium';
+        width: 90%;
+        margin: 0.2rem 0;
+      }
+
+      .inputRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .inputField {
+        display: flex;
+        justify-content: start;
+        font-family: 'GothamMedium';
+        align-items: center;
+        background-color: var(--gray-200);
+        color: var(--gray-500);
+        height: 44px;
+        border-radius: 8px;
+        width: 75%;
+        border: none;
+        font-size: 14px;
+        padding: 0.2rem 0 0.2rem 0.5rem;
+      }
+      .button {
+        width: 20%;
+        font-size: 14px;
+      }
+
+      .fieldInputContainerSeparator {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        .start {
+          width: 46%;
+          border-top: 1px solid var(--gray-500);
+        }
+        .middle {
+          width: 8%;
+          font-size: 12px;
+          align-items: center;
+          text-align: center;
+          color: var(--gray-500);
+        }
+        .end {
+          width: 46%;
+          border-top: 1px solid var(--gray-500);
+        }
+      }
+    }
+
+    .modalItemList {
+      display: flex;
+      flex-direction: column;
+      margin: 0 1.5rem;
+      height: 53%;
+
+      .titleText {
+        font-size: 14px;
+        font-family: 'GothamMedium';
+        width: 90%;
+        margin: 0.2rem 0;
+      }
+      .item {
+        border: 1px solid var(--gray-300);
+        height: 43%;
+        max-width: 100%;
+        border-radius: 12px;
+        margin: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        color: var(--gray-900);
+        padding: 1rem;
+      }
+      .itemDiscount {
+        width: 100%;
+        font-size: 24px;
+        font-family: 'GothamBold';
+      }
+      .itemExpiry {
+        width: 100%;
+        font-size: 12px;
+        font-family: 'GothamLight';
+        padding-bottom: 0.5rem;
+      }
+      .itemCode {
+        width: 100%;
+        font-size: 14px;
+        font-family: 'GothamMedium';
+        padding-top: 0.3rem;
+      }
+      .itemAction {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-family: 'GothamBold';
+        font-size: 12px;
+        color: var(--citrus-500);
+        width: 30%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+      }
+      .itemAction:hover {
+        background-color: var(--gray-200);
+      }
+    }
+  }
+
+  .membershipView {
+    display: flex;
+    background-color: var(--header-color);
+    flex-direction: column;
+    height: 770px;
+    width: 600px;
+    border-radius: 12px;
+
+    .titleContainer {
+      text-align: left;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--gray-300);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .titleText {
+        font-size: 20px;
+        font-family: 'GothamMedium';
+        width: 90%;
+      }
+      .titleClose {
+        width: 5%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--gray-100);
+        border-radius: 50%;
+        cursor: pointer;
+        font-family: 'GothamLight';
+        font-size: 20px;
+        color: var(--gray-700);
+      }
+    }
+
+    .modalCheckoutListContainer {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      height: 70%;
+      margin: 2.5rem 1.5rem 2.5rem 1.5rem;
+      border: 1px solid var(--gray-300);
+      border-radius: 12px;
+    }
+  }
+
+  .completeView {
+    width: 400px;
+    height: 330px;
+    background-color: var(--header-color);
+    display: flex;
+    border-radius: 12px;
+    position: relative;
+
+    .completeClose {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--gray-100);
+      border-radius: 50%;
+      color: var(--gray-700);
+      cursor: pointer;
+    }
+
+    .ModalCompletionCardContainer {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .completeIconContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0 2rem 0;
+        .completeIcon {
+          padding: 0.3rem;
+          font-size: 50px;
+          border-radius: 50%;
+          border: 5px solid var(--green-500);
+          color: var(--green-500);
+        }
+      }
+      .completeTitleContainer {
+        font-family: 'GothamBold';
+        font-size: 20px;
+      }
+      .completeTextContainer {
+        font-family: 'GothamLight';
+        font-size: 14px;
+        padding: 0.5rem 0 2rem 0;
+      }
+      .completeCloseContainer {
+        .button {
+          width: 120px;
+          height: 44px;
+          font-family: 'GothamBold';
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .ModalCloseApplyCouplingContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 10%;
+    margin-right: 1rem;
+
+    .button {
+      width: 20%;
+      height: 65%;
+      margin: 0 0.5rem;
+      font-size: 14px;
+    }
+
+    .citrus {
+      background-color: var(--citrus-500);
+      color: black;
+    }
+    .gray {
+      background-color: var(--gray-200);
+      color: var(--gray-800);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    .vouchersView {
+      height: 90vh;
+      width: 90vw;
+
+      .titleContainer {
+        .titleClose {
+          width: 9%;
+        }
+      }
+
+      .fieldInputContainer {
+        .inputField {
+          width: 50vw;
+          font-size: 12px;
+        }
+
+        .button {
+          width: 20vw;
+          font-size: 14px;
+        }
+      }
+
+      .modalItemList {
+        height: 50vh;
+        .itemAction {
+          width: 40vw;
+        }
+      }
+    }
+
+    .membershipView {
+      height: 90vh;
+      width: 90vw;
+
+      .titleContainer {
+        .titleClose {
+          width: 9%;
+        }
+      }
+
+      .modalCheckoutListContainer {
+        margin: 2.5rem 1rem 2.5rem 1rem;
+      }
+    }
+
+    .completeView {
+      width: 90vw;
+      height: 40vh;
+    }
+
+    .ModalCloseApplyCouplingContainer {
+      .button {
+        width: 20vw;
+      }
+    }
+  }
+}
